@@ -7,7 +7,7 @@
 ###  kernel
  * [詳解Linuxカーネル 第3版](http://www.amazon.co.jp/dp/487311313X/)
  
-### ~ReadableCode~
+### ~~ReadableCode~~
  * [リーダブルコード ―より良いコードを書くためのシンプルで実践的なテクニック](http://www.amazon.co.jp/dp/4873115655/)
  
 ### TheArtofComputerProgramming
