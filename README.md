@@ -2,7 +2,9 @@
 
 ### Professional_Python
  * [Pythonプロフェッショナルプログラミング第2版](http://www.amazon.co.jp/dp/479804315X/)
- 
+
+### ProgrammingChallenge
+ * [プログラミングコンテストチャレンジブック [第2版]](http://www.amazon.co.jp/dp/4839941068/)
 
 ###  kernel
  * [詳解Linuxカーネル 第3版](http://www.amazon.co.jp/dp/487311313X/)
