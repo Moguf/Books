@@ -1,31 +1,20 @@
 Books
 =====
 
-Professional_Python
--------------------
+* `Pythonプロフェッショナルプログラミング第2版`_
 
-[Pythonプロフェッショナルプログラミング第2版](http://www.amazon.co.jp/dp/479804315X/)
+* `プログラミングコンテストチャレンジブック [第2版]`_
 
-ProgrammingChallenge
---------------------
+* `リーダブルコード ―より良いコードを書くためのシンプルで実践的なテクニック`_
 
-[`プログラミングコンテストチャレンジブック [第2版]`_]
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-[詳解Linuxカーネル 第3版](http://www.amazon.co.jp/dp/487311313X/)
-""""""""""""""""""""""
-
-### ~~ReadableCode~~ [*](https://github.com/Moguf/Books/tree/master/ReadableCode)
- * [リーダブルコード ―より良いコードを書くためのシンプルで実践的なテクニック](http://www.amazon.co.jp/dp/4873115655/)
+* `The Art of Computer Programming`_
  
-### TheArtofComputerProgramming [*](https://github.com/Moguf/Books/tree/master/TheArtofComputerProgramming)
- * [The Art of Computer Programming](http://www.amazon.co.jp/dp/4756147127/)
- 
-### Server-Infra [*](https://github.com/Moguf/Books/tree/master/Server-Infra)
- * [[24時間365日] サーバ/インフラを支える技術 ‾スケーラビリティ、ハイパフォーマンス、省力運用 ](http://www.amazo.co.jp/dp/4774135666/)
- 
-
+* `[24時間365日] サーバ/インフラを支える技術 ‾スケーラビリティ、ハイパフォーマンス、省力運用`_
 
 ### 上記の本に関する勉強のページ
 
 .. _プログラミングコンテストチャレンジブック [第2版]: http://www.amazon.co.jp/dp/4839941068/
+.. _Pythonプロフェッショナルプログラミング第2版: http://www.amazon.co.jp/dp/479804315X/
+.. _リーダブルコード ―より良いコードを書くためのシンプルで実践的なテクニック: http://www.amazon.co.jp/dp/4873115655/
+.. _The Art of Computer Programming: http://www.amazon.co.jp/dp/4756147127/
+.. _[24時間365日] サーバ/インフラを支える技術 ‾スケーラビリティ、ハイパフォーマンス、省力運用: http://www.amazo.co.jp/dp/4774135666/
