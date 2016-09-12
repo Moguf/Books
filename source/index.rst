@@ -6,10 +6,24 @@
 Welcome to Books's documentation!
 =================================
 
-Contents:
+Computer Science              
+----------------
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
+
+   kernel/index.rst
+
+Business & Money
+----------------
+
+.. toctree::
+   :maxdepth: 1
+
+   consultantNewcomer/index.rst
+   fx_introduction/index.rst
+   stocks_introduction/index.rst
+   first_macroecnomics/index.rst
 
 
 
