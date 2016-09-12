@@ -9,11 +9,12 @@ Professional_Python
 ProgrammingChallenge
 --------------------
 
- * [`プログラミングコンテストチャレンジブック [第2版]`_]
+[`プログラミングコンテストチャレンジブック [第2版]`_]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-###  kernel [*](https://github.com/Moguf/Books/tree/master/kernel)
- * [詳解Linuxカーネル 第3版](http://www.amazon.co.jp/dp/487311313X/)
- 
+[詳解Linuxカーネル 第3版](http://www.amazon.co.jp/dp/487311313X/)
+""""""""""""""""""""""
+
 ### ~~ReadableCode~~ [*](https://github.com/Moguf/Books/tree/master/ReadableCode)
  * [リーダブルコード ―より良いコードを書くためのシンプルで実践的なテクニック](http://www.amazon.co.jp/dp/4873115655/)
  
