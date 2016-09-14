@@ -12,7 +12,7 @@ Computer Science
 .. toctree::
    :maxdepth: 1
 
-   kernel/index.rst
+   ComputerScience/kernel/index.rst
 
 Business & Money
 ----------------
@@ -20,11 +20,11 @@ Business & Money
 .. toctree::
    :maxdepth: 1
 
-   consultantNewcomer/index.rst
-   fx_introduction/index.rst
-   stocks_introduction/index.rst
-   first_macroecnomics/index.rst
-
+   BusinessAndMoney/consultantNewcomer/index.rst
+   BusinessAndMoney/fx_introduction/index.rst
+   BusinessAndMoney/stocks_introduction/index.rst
+   BusinessAndMoney/first_macroecnomics/index.rst
+   BusinessAndMoney/Management_Drucker/index.rst
 
 
 Indices and tables
