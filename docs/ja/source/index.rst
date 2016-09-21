@@ -9,8 +9,7 @@ Welcome to Books's documentation!
 For me.
 -----------
 
-:t:`title`
-coment :sup:`super` :sub:`here`  
+:math:`a^2 + \sum_{a}`
 
 .. |date| date::
 
