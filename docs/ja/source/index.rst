@@ -9,19 +9,13 @@ Welcome to Books's documentation!
 For me.
 -----------
 
-:math:`a^2 + \sum_{a}`
-
-.. |date| date::
-
-|date|          
-
 Computer Science              
 ----------------
 
 .. toctree::
    :maxdepth: 1
 
-   ComputerScience/kernel/index.rst
+   ComputerScience/index.rst
 
 Business & Money
 ----------------
@@ -29,12 +23,7 @@ Business & Money
 .. toctree::
    :maxdepth: 1
 
-   BusinessAndMoney/consultantNewcomer/index.rst
-   BusinessAndMoney/fx_introduction/index.rst
-   BusinessAndMoney/stocks_introduction/index.rst
-   BusinessAndMoney/first_macroecnomics/index.rst
-   BusinessAndMoney/Management_Drucker/index.rst
-   BusinessAndMoney/TheInnovatorsDNA/index.rst
+   BusinessAndMoney/index.rst
 
 
    
