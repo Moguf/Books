@@ -10,7 +10,10 @@ Tecnical Analysis Of The Financial Markets
 
 本のあらすじ
 ----------------------------
+
 .. toctree::
+   :maxdepth: 1
+              
    ch1
    
    
@@ -25,4 +28,6 @@ Tecnical Analysis Of The Financial Markets
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. toctree::
+   :maxdepth: 1
+              
    words
