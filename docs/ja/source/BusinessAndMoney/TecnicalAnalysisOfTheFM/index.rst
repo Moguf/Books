@@ -16,7 +16,6 @@ Tecnical Analysis Of The Financial Markets
               
    ch1
    
-   
 
 
 この本を読んで

@@ -20,6 +20,54 @@ History repeats itself
 ^^^^^^^^^^^^^^^^^^^^^^
 過去の市場を分析することによって、未来に市場を予測する。市場の心理は過去も現在も変わらないという前提に基づいている。
 
+Tecnical Versus Fundamental Forecasting
+---------------------------------------
+
+
+Analysis Versus Timing
+---------------------------------------
+
+
+Flexibility And Adaptability of technical analysis
+--------------------------------------------------
+
+
+Technical Analysis Applied To Different Trading Mediums
+-------------------------------------------------------
+
+Technical Analysis Applied To Different Time Dimensions
+-------------------------------------------------------
+
+Economic Forecasting
+-------------------------------------------------------
+
+Technician or Chartist
+-------------------------------------------------------
+
+A Brief Comparison Of Technical Analysis In Stocks And Futures
+--------------------------------------------------------------
+
+Pricing Structure
+^^^^^^^^^^^^^^^^^
+
+Limited Life Span
+^^^^^^^^^^^^^^^^^
+
+Lower Margin Requirements
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Time Frame Is Much Shorter
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Greater Reliance On Timing
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Less Relicance On Market Averages And Indicators
+--------------------------------------------------
+
+
 
 .. toctree::
+   :maxdepth: 1
+   
    words
