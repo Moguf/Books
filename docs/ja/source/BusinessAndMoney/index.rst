@@ -16,3 +16,4 @@ Business & Money
    ForexForBeginners/index.rst                      
    ACompleteGuideToVolumePriceAnalysis/index.rst    
    AThreeDimensionalApproachToForexTrading/index.rst
+   IntroductionGeopolitics/index.rst
