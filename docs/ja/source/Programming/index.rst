@@ -9,3 +9,4 @@ Programming
    TheCppProgrammingLanguage/index.rst
    EffectveJavaScript/index.rst
    EffectveModernCpp/index.rst
+   EffectvePython/index.rst   
