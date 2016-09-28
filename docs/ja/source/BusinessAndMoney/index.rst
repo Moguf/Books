@@ -17,3 +17,5 @@ Business & Money
    ACompleteGuideToVolumePriceAnalysis/index.rst    
    AThreeDimensionalApproachToForexTrading/index.rst
    IntroductionGeopolitics/index.rst
+   TextbookForNewcomers/index.rst
+   BehaviroalInovation/index.rst
