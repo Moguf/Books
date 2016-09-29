@@ -5,4 +5,5 @@ Computer Science
    :maxdepth: 1
 
    kernel/index.rst
-
+   ImageInformationProcessing/index.rst
+   AudioRecognitionSystem/index.rst
