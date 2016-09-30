@@ -19,3 +19,4 @@ Business & Money
    IntroductionGeopolitics/index.rst
    TextbookForNewcomers/index.rst
    BehaviroalInovation/index.rst
+   JapaneseCandlestickChartingTechniques/index.rst
