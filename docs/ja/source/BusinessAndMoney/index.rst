@@ -20,3 +20,4 @@ Business & Money
    TextbookForNewcomers/index.rst
    BehaviroalInovation/index.rst
    JapaneseCandlestickChartingTechniques/index.rst
+   ImproveFermiEstimation/index.rst

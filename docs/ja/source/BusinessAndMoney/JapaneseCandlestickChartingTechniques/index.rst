@@ -36,6 +36,21 @@ Ch.3からいよいよローソク足の話に入る。それまでは、日本�
 :reversal patterns:   トレンドの終わりを意味しており、決してトレンドが反転するわけではない。
 
 :Umbrella lines:   カラカサ
-      
+
+:hammer:   下降トレンド(Down trend)でUmbrella lineが出ると、それはhammerと呼ばれる（日本語で「たくり」）。これはマーケットの反転を意味している。
+
+:hanging man:   上昇トレンドでUmbrella lineが出ると、hanging macと呼ばれる。
+
+* hmmerとhanging manとは
+  * ボディーの上部がローソク足の上部になる。それはボディーの色に関係ない。
+  * *下ヒゲの長さは少なくともボディーの長さの2倍以上である。*
+  * 上ヒゲはないか、とても短くなければならない。
+
 この本を読んで
 ------------------
+
+
+.. toctree::
+   :maxdepth: 1
+              
+   words
