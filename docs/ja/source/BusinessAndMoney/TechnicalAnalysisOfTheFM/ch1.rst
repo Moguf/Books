@@ -1,5 +1,5 @@
-Chapter01
-=========
+Chapter01. Philosophy of Technical Analysis
+======================================================
 
 PHILOSOPHY OR RATIONALE
 -----------------------
@@ -37,13 +37,13 @@ Tecnical Versus Fundamental Forecasting
 Analysis Versus Timing
 ---------------------------------------
 
-決定のプロセスは解析とタイミングに分割することができる。
+決定のプロセスは解析とタイミングに分割することができる。先物取引では高レバレッジのせいで、タイミングが非常に重要になる。また、先物取引は、"買って、保持する"ことができない。テクニカル分析やファンダメンタルズ分析は、解析をして予測をする段階で使用されるが、問題は売買のタイミングである。この売買のタイミングも、純粋にテクニカルに解析する事が可能であり、非常に重要である事を忘れてはならない。
 
 
 Flexibility And Adaptability of technical analysis
 --------------------------------------------------
 
-テクニカル分析は、株だけでなく先物取引にも応用できる。また、個々の市場やマーケットなどに特化したファンダメンタルズ分析とは違い、テクニカル分析はそれらに依存せず利用することが出来る。
+テクニカル分析は、株だけでなく先物取引にも応用できる。また、個々の市場やマーケットなどに特化したファンダメンタルズ分析とは違い、テクニカル分析はそれらに依存せず利用することが出来る。これらのことを通して、テクニカル分析は、マーケットに対して、マーケットを選ばない大きな視野を獲得する事ができる。
 
 Technical Analysis Applied To Different Trading Mediums
 -------------------------------------------------------
@@ -71,9 +71,14 @@ Technical Analysis Applied To Different Time Dimensions
 
 Economic Forecasting
 -------------------------------------------------------
+テクニカル分析は、経済を予測するためにも重要な役割を担う事ができる。例えば、金や原油の物価が経済の良し悪しを予測する事も可能である。実際に経済予測指標が発表される前に、それらの先物市場は何らかの値動きを見せている。
+
 
 Technician or Chartist
 -------------------------------------------------------
+テクニカル分析をする人には様々な呼び名がある。'technical analyst','cartist','market analyst','visual analyst'
+
+
 
 A Brief Comparison Of Technical Analysis In Stocks And Futures
 --------------------------------------------------------------
@@ -95,6 +100,25 @@ Greater Reliance On Timing
 
 Less Relicance On Market Averages And Indicators
 --------------------------------------------------
+
+Specific Technical Tools
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Some Criticisms Of The Technical Approach
+--------------------------------------------------
+
+The Self-Fulfilling Prophecy
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Can the Past Be Used to Predict the Future
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Random Walk Theory
+---------------------
+
+Universal Principles
+---------------------
 
 
 

@@ -2,17 +2,19 @@ Business & Money
 ----------------
 
 .. toctree::
+   :numbered:
+   :titlesonly:
    :maxdepth: 1
-
+              
    consultantNewcomer/index.rst
    fx_introduction/index.rst
    stocks_introduction/index.rst
    first_macroecnomics/index.rst
    Management_Drucker/index.rst
    TheInnovatorsDNA/index.rst
-   TecnicalAnalysisUsingMultipleTimeFrames/index.rst
+   TechnicalAnalysisUsingMultipleTimeFrames/index.rst
    GettingStartedInChartPatterns/index.rst          
-   TecnicalAnalysisOfTheFM/index.rst                
+   TechnicalAnalysisOfTheFM/index.rst                
    ForexForBeginners/index.rst                      
    ACompleteGuideToVolumePriceAnalysis/index.rst    
    AThreeDimensionalApproachToForexTrading/index.rst

@@ -27,3 +27,7 @@ Chapter01
 :margin:   余白、マージン、余裕
 
 :medium:   手段、媒体、機関、媒介物、媒質
+
+:commodity prices:  物価
+
+:practitinoers:   実践する人                    
