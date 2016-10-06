@@ -23,3 +23,4 @@ Business & Money
    BehaviroalInovation/index.rst
    JapaneseCandlestickChartingTechniques/index.rst
    ImproveFermiEstimation/index.rst
+   FXChartReadingMasterBook/index.rst
