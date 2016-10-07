@@ -31,3 +31,11 @@ Chapter01
 :commodity prices:  物価
 
 :practitinoers:   実践する人                    
+
+:subjective:  主観的な                
+
+:bushel:  35リットル
+
+:quote:  引用する。見積もり
+
+         

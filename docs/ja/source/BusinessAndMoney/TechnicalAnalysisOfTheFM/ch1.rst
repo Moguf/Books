@@ -76,18 +76,22 @@ Economic Forecasting
 
 Technician or Chartist
 -------------------------------------------------------
-テクニカル分析をする人には様々な呼び名がある。'technical analyst','cartist','market analyst','visual analyst'
-
-
+テクニカル分析をする人には様々な呼び名がある。'technical analyst','cartist','market analyst','visual analyst'なんて呼ばれたりもするが、ほぼ一緒である。実際的には、伝統的な手法を使う人と統計的な手法を使う人に分けることができる。前者は、アーティスティックな肌を持ち合わせており、チャート情報を主観的に理解する。後者は、コンピューターなどを駆使することにより、徹底的に統計的なアプローチをとる人を指す。
+o
 
 A Brief Comparison Of Technical Analysis In Stocks And Futures
 --------------------------------------------------------------
+メインとなる問いは、先物取引でも株取引で用いたテクニカル分析が有効であるかということである。これはイエスでもあるしノーでもある。ここでは先物取引と株取引の違いに焦点を当てる。
+
 
 Pricing Structure
 ^^^^^^^^^^^^^^^^^
+株価より先物市場の価格は複雑である。先物市場は、単位によって利率も変わる。それらの詳細をトレーダーは理解していなければならない。
 
 Limited Life Span
 ^^^^^^^^^^^^^^^^^
+
+
 
 Lower Margin Requirements
 ^^^^^^^^^^^^^^^^^^^^^^^^^

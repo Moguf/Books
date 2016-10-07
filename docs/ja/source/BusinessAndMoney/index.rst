@@ -24,3 +24,4 @@ Business & Money
    JapaneseCandlestickChartingTechniques/index.rst
    ImproveFermiEstimation/index.rst
    FXChartReadingMasterBook/index.rst
+   RichDadPoorDad/index.rst
