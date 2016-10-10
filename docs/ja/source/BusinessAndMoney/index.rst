@@ -25,3 +25,6 @@ Business & Money
    ImproveFermiEstimation/index.rst
    FXChartReadingMasterBook/index.rst
    RichDadPoorDad/index.rst
+   UtilizingAccountingIntoStrategy/index.rst
+   TheMintoPyramidPrinciple/index.rst
+   AnEasyGuideToAccounting/index.rst
