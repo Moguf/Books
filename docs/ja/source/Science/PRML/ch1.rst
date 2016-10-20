@@ -32,7 +32,7 @@ Answer
 
 .. math::
 
-   \frac{dE({\bf omega})} {d \oemga} = \sum^{N}_{n=1} \frac{dy}{d\omega_i} (y(x_n, {\bf \omega})-t_n)
+   \frac{dE({\bf omega})}{d \oemga} = \sum^{N}_{n=1} \frac{dy}{d\omega_i} (y(x_n, {\bf \omega})-t_n)
 
 
    
