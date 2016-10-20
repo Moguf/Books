@@ -32,5 +32,11 @@ Answer
 
 .. math::
 
-   \frac{dE({\bf omega})}{d \oemga} = \sum^{N}_{n=1} \frac{dy}{d\omega_i} (y(x_n, {\bf \omega})-t_n)
-   = \sum^{N}_{n=1} x^i_n \{ y(x_n, {\bf oemga}) - t_n) \}
+   \frac{dE({\bf omega})} {d \oemga} = \sum^{N}_{n=1} \frac{dy}{d\omega_i} (y(x_n, {\bf \omega})-t_n)
+
+
+   
+= \sum^{N}_{n=1} x^i_n \{ y(x_n, {\bf oemga}) - t_n) \}
+= \sum^{N}_{n=1} x^i_n \{ \sum^{M}_{j=0} \omega_jx^j_n - t_n) \}
+   
+   

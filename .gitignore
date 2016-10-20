@@ -92,6 +92,7 @@ ENV/
 # For emacs
 *~
 \#*
+.\#*
 
 # For my test-code.
 test.py
