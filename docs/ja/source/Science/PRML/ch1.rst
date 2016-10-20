@@ -6,6 +6,7 @@ Introduction
 
 .. math::
 
+
    y(x, \omega) = \sum^{M}_{j=0} \omega_j x^j
    
    E({\bf w}) = \frac{1}{2} \sum^{N}_{n=1} \{y(x_n, {\bf w}) - t_n\}^2
@@ -28,3 +29,8 @@ Introduction
 
 Answer   
 ^^^^^^^
+
+.. math::
+
+   \frac{dE({\bf omega})}{d \oemga} = \sum^{N}_{n=1} \frac{dy}{d\omega_i} (y(x_n, {\bf \omega})-t_n)
+   = \sum^{N}_{n=1} x^i_n \{ y(x_n, {\bf oemga}) - t_n) \}
