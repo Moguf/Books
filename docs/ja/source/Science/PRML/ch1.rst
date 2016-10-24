@@ -153,7 +153,7 @@ Answer
 
 .. math::
 
-   P(G|o) = \frac{ P(o|G) P(G) }{ P(o) } = \frac{\frac{3}{10}\frac{1}{5}}{\frac{18}{50}} = \frac{3}{18} = \frac{1}{6}
+   P(G|o) = \frac{ P(o|G) P(G) }{ P(o) } = \frac{\frac{3}{10}\frac{3}{5}}{\frac{18}{50}} = \frac{9}{18} = \frac{1}{2}
 
 
 1.4(標準)
@@ -373,8 +373,35 @@ Answer
 
 1.8
 ----
+
+.. math::
+
+   {\sl N}(x|\mu,\sigma^2) = \frac{1}{(2\pi\sigma^2)^{1/2}}exp\left\{ -\frac{1}{2\sigma^2}(x-\mu)^2\right\}
+
+が
+
+.. math::
+
+   {\bf E}[x] = \int^{\infty}_{-\infty} N(x|\mu,\sigma^2) x dx = \mu
+
+を満たすことを示せ。
+
+次に、規格化条件の式を :math:`\sigma^2` に関して微分して
+
+.. math::
+
+   {\bf E}[x^2] = \int^{\infty}_{-\infty} N(x|\mu,\sigma^2) x^2 dx = \mu^2 + \sigma^2
+
+最後に、以下が成り立つことを示せ。
+
+.. math::
+
+   var[x] = {\bf E} [x^2]-{\bf E} [x]^2 = \sigma^2
+
+
 Answer
 ^^^^^^
+
 
 1.9
 ----
@@ -383,8 +410,46 @@ Answer
 
 1.10
 ----
+
+:math:`x,z` が統計的に独立であるとすると、以下が成り立つことを示せ。
+
+.. math::
+   :nowrap:
+
+   \begin{eqnarray}
+   {\bf E}[x+z] = {\bf E}[x] + {\bf E}[z] \\
+   var[x+z] = var[x] + var[z]
+   \end{eqnarray}
+
 Answer
 ^^^^^^
+まずは、(1)から示す。確率分布が離散分布でも連続分布でも同様に示すことが出来るので、ここでは連続分布で証明する。
+
+.. math::
+   :nowrap:
+
+   \begin{eqnarray*}
+   {\bf E}[x+z] &=& \int^{\infty}_{-\infty} \int^{\infty}_{-\infty} p(x, z)(x+z) dxdz \\
+   &=& \int^{\infty}_{-\infty} \int^{\infty}_{-\infty} p(x)p(z)(x+z) dxdz \\
+   &=& \int^{\infty}_{-\infty} p(x)xdx + \int^{\infty}_{-\infty} p(z)z dz \\
+   &=& {\bf E}[x] + {\bf E}[z]
+   \end{eqnarray*}   
+
+次に、(2)は上記の結果を使って
+
+.. math::
+   :nowrap:
+
+   \begin{eqnarray*}
+   var[x+z] &=& {\bf E}[(x+z)^2] + {\bf E}[x+z]^2  \\
+   &=& {\bf E}[x^2 + 2xz + z^2] + ({\bf E}[x] + {\bf E}[z])^2 \\
+   &=& {\bf E}[x^2] + {\bf E}[2xz] + {\bf E}[z^2] - ( {\bf E}[x]^2 + 2{\bf E}[x]{\bf E}[z] + {\bf E}[z]^2) \\
+   &=& {\bf E}[x^2] + 2{\bf E}[x]{\bf E}[z] + {\bf E}[z^2] - ( {\bf E}[x]^2 + 2{\bf E}[x]{\bf E}[z] + {\bf E}[z]^2) \\
+   &=& {\bf E}[x^2] -{\bf E}[x]^2 + {\bf E}[z^2] - {\bf E}[z]^2 \\
+   &=& var[x] + var[z]
+   \end{eqnarray*}
+   
+   
 
 1.11
 ----
