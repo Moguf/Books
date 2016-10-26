@@ -283,7 +283,14 @@ Answer
    :nowrap:
 
    \begin{eqnarray*}
-   (1)
+   && (1)\hspace{5pt} =\bar{2}\cdot\overline{17}\times\bar{3}\cdot\bar{7}\times\bar{3}\cdot\overline{11} =
+      \overline{51}\times\overline{42}\times\overline{11} \\
+      &&\hspace{23pt}=\overline{12}\times\bar{3}\times\overline{11} = \overline{132}\times\bar{3} =\overline{15}\times\bar{3}=\bar{6}\\
+   && (2)\hspace{5pt} =\overline{25} \times\bar{6}\times\overline{39} = \bar{0} \\
+   && (3)\hspace{5pt} = \overline{256}^4=\overline{22}^4 = \overline{44}\cdot\overline{44}\cdot\overline{11}\cdot\overline{11} \\
+   &&\hspace{23pt}=\bar{5}\cdot\bar{5}\cdot\overline{11}\cdot\overline{11} = \overline{55}\cdot\overline{55} =\overline{15}\times\bar{3}=\bar{6}\\
+   && (4)\hspace{5pt} = \overline{16}^{8\cdot4}\cdot\overline{16}^2 = \bar{6}^4\cdot\overline{22} = \overline{36}\cdot\overline{18}\cdot\overline{44} \\
+   &&\hspace{23pt}= \overline{36}\cdot\overline{18}\cdot\bar{5} =\overline{36}\cdot\overline{80} = \overline{36}\cdot\bar{2} = \overline{33}
    \end{eqnarray*}
 
 
@@ -294,6 +301,27 @@ Answer
 
 Answer
 ^^^^^^^^
+まずは、部分群の復習。
+
+| `命題2.3.2` 群Gの部分集合HがGの部分群になるための必要十分条件は、次の３つの条件が満たされることである。
+| (1) :math:`1_G\in H` .
+| (2) :math:`x,y\in H` なら :math:`xy\in H`.
+| (3) :math:`x\in H` なら :math:`x^{-1}\in H`.
+
+まずは、
+
+| '':math:`H` が部分群 :math:`\Rightarrow` 任意の :math:`x,y\in H` に対して :math:`x^{-1}y\in H` を証明する。''
+
+:math:`x,y\in H` ならばHが部分群であるから、 :math:`x^{-1},y^{-1}\in H` そして、 :math:`x^{-1}y\in H` となり、上記は証明された。
+
+そして、
+
+| '':math:`H` が部分群 :math:`\Leftarrow` 任意の :math:`x,y\in H` に対して :math:`x^{-1}y\in H` を証明する。''
+
+ここで、 `命題2.3.2` を使う。 :math:`y=x` とすると、 :math:`x^{-1}y\in H \Rightarrow x^{-1}x\in H \Rightarrow e_H\in H`  となる。 :math:`e_H\in G` とすると、 :math:`e_He^{-1}_H = e_He_H =e_G` となることから、 :math:`e_G = e_H` となる。 :math:`e\in H` を証明したので、 :math:`y=e` とすると、 :math:`x^{-1}\in H` となる。 :math:`x=x^{-1}` とすると、 :math:`xy\in H` となる。よって、上記の命題は証明された。
+
+以上より、題意は示された。      
+      
 
 2.3.2
 ------------
@@ -311,12 +339,14 @@ Answer
       \right)
    \end{eqnarray*}
 
-とし、 :math:`J_n` は :math:`2n\times 2n` 行列である。 :math:`Sp(2n)=\{g\in G| \ ^tgJ_ng=J_n\}` とし、 :math:`Sp(2n)` をシンプレティック群という。
+とし、 :math:`J_n` は :math:`2n\times 2n` 行列である。 :math:`Sp(2n)=\{g\in GL_{2n}({\mathbb R})| \ ^tgJ_ng=J_n\}` とし、 :math:`Sp(2n)` をシンプレティック群という。
    
 n次正則行列 :math:`GL_n({\mathbb R})` とすると、 :math:`Sp(2n) \subset GL_{2n}({\mathbb R})` が部分群であることを証明せよ。
 
 Answer
 ^^^^^^^^
+
+
 
 2.3.3
 ------------
