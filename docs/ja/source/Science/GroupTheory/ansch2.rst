@@ -81,11 +81,11 @@ Answer
    \begin{tabular}{|r|r|r|r|r|r|r|}
    \hline & e    & (12)  & (13) & (23) & (123) & (132) \\ \hline
    e      & e    & (12)  & (13) & (23) & (123) & (132) \\ \hline
-   (12)   & (12) & 2     & (123)& (23) & (123) & (132) \\ \hline
+   (12)   & (12) & e     & (123)& (23) & (123) & (132) \\ \hline
    (13)   & (13) & (132) & e    & (23) & (123) & (132) \\ \hline
-   (23)   & (23) & (123) & (13) & e    & (123) & (132) \\ \hline
+   (23)   & (23) & (123) & (132) & e    & (123) & (132) \\ \hline
    (123)  & (123)& (23)  & (13) & (23) & e     & (132) \\ \hline
-   (132)  & (132)& (13)  & (13) & (23) & (123) & e     \\ \hline                                        
+   (132)  & (132)& (23)  & (13) & (23) & (123) & e     \\ \hline                                        
    \end{tabular}
    \end{eqnarray*}
 
@@ -346,6 +346,44 @@ n次正則行列 :math:`GL_n({\mathbb R})` とすると、 :math:`Sp(2n) \subset
 Answer
 ^^^^^^^^
 
+:math:`g,h\in Sp(2n)` とすると
+
+.. math::
+   :nowrap:
+
+   \begin{eqnarray*}
+   ^t(gh)J_n(gh) &=& ^th^tgJ_ngh = ^thJ_nh = J_n
+   \end{eqnarray*}
+
+となり、:math:`g h\in Sp(2n)` となる。
+
+:math:`g^{-1}\in GL_{2n}({\mathbb R})` であるから
+
+.. math::
+   :nowrap:
+
+   \begin{eqnarray*}
+   && ^t(g^{-1})J_ng^{-1} = A   \\
+   && \Leftrightarrow (^tg)^{-1}J_ng^{-1} = A  \\
+   && \Leftrightarrow J_n = ^tgAg   
+   \end{eqnarray*}
+
+となり、 :math:`A=J_n` であるから、 :math:`g^{-1}\in J_n` となる。
+
+:math:`g^{-1},g \in Sp(2n)` であるから、
+
+.. math::
+   :nowrap:
+
+   \begin{eqnarray*}
+   && ^t(gg^{-1})J_ngg^{-1} = J_n   \\
+   && \Leftrightarrow I_nJ_nI_n = J_n
+   \end{eqnarray*}
+
+よって、 :math:`I_n \in Sp(2n)` となる。
+
+以上より、 :math:`Sp(2n) \subset GL_{2n}({\mathbb R})` となり、部分群となる。
+   
 
 
 2.3.3
@@ -354,6 +392,45 @@ Answer
 
 Answer
 ^^^^^^^^
+
+:math:`g,h\in U(n)` とすると
+
+.. math::
+   :nowrap:
+
+   \begin{eqnarray*}
+   ^t(\overline{gh})gh = ^t\bar{h} ^t\bar{g}gh = ^t\bar{h}h = I_n
+   \end{eqnarray*}
+
+となり、:math:`g,h\in U(n)` となる。
+
+:math:`g^{-1}\in U(n)` であるから
+
+.. math::
+   :nowrap:
+
+   \begin{eqnarray*}
+   && ^t(\bar{g}^{-1})g^{-1} = A   \\
+   && \Leftrightarrow (^t\bar{g})^{-1}\bar{g}^{-1} = A  \\
+   && \Leftrightarrow A = ^t\bar{g}\bar{g}
+   \end{eqnarray*}
+
+となり、 :math:`A=I_n` であるから、 :math:`g^{-1}\in U(n)` となる。
+
+:math:`g^{-1},g \in U(n)` であるから、
+
+.. math::
+   :nowrap:
+
+   \begin{eqnarray*}
+   ^t(\overline{gg}^{-1})gg^{-1} = ^t\bar{g}^{-1} {}^t\bar{g}gg^{-1} = I_n
+   \end{eqnarray*}
+
+よって、 :math:`I_n \in U(n)` となる。
+
+以上より、 :math:`U(n) \subset GL_{2n}({\mathbb R})` となり、部分群となる。
+
+
 
 2.3.4
 ------------
@@ -365,53 +442,169 @@ Answer
 Answer
 ^^^^^^^^
 
+
 2.3.5
 ------------
+:math:`{\mathbb R}^{\times} = {\mathbb R}\setminus \{0\}` を乗法により群とみなす。このとき、正の実数の集合 :math:`{\mathbb R}_>` は :math:`{\mathbb R}^{\times}` の部分群であることを証明せよ。
+
 Answer
 ^^^^^^^^
 
 2.3.6
 ------------
+:math:`{\mathbb R}` を加法により群とみなす。このとき、正の実数の集合 :math:`{\mathbb R}_>` は :math:`R` の部分群であることを証明せよ。
+
+   
+Answer
+^^^^^^^^
+
+2.3.7
+------------
+:math:`{\mathbb C}^{\times}` を通常の乗法により群とみなす。このとき、正の整数nを固定し、 :math:`H=\{z\in{\mathbb C}^{\times}|z^n=1\}`  集合 :math:`{\mathbb R}_>` とおく。 :math:`H` が :math:`{\mathbb C}^{\times}` の位数nの巡回部分群であることを証明せよ。
+   
+Answer
+^^^^^^^^
+
+2.3.8
+------------
+1. :math:`{\mathbb R}` を加法により群とみなす。このとき、正の実数の集合 :math:`{\mathbb R}_>` は :math:`R` の部分群であることを証明せよ。
+2. :math:`{\mathbb Q}` が加法に関して巡回群ではないことを証明せよ。
+3. :math:`{\mathbb R}` が加法に関して巡回群ではないことを証明せよ。
+4. :math:`{\mathbb Q}^{\times}` が乗法に関して巡回群ではないことを証明せよ。
+5. :math:`{\mathbb Z}\times{\mathbb Z}` が加法に関して巡回群ではないことを証明せよ。
+   
+Answer
+^^^^^^^^
+
+2.3.9
+------------
+
+1. :math:`{\mathfrak S}_n` は :math:`\sigma_1 = (12), \cdot\cdot\cdot ,\sigma_{n-1} = (n-1 n)` によって生成されることを証明せよ。
+
+2. :math:`{\mathfrak S}_n` は :math:`\sigma = (12\cdot\cdot\cdot n)` と  :math:`\tau = (1 2)` によって生成されることを証明せよ。
+
 Answer
 ^^^^^^^^
 
 2.4.1
 ------------
+
+1. 36と-48の最大公約数と最小公倍数を求めよ。
+   
+2. 35と24は互いに素か？
+
 Answer
 ^^^^^^^^
 
 2.4.2
 ------------
+
+1. 395と265の最大公約数dをユークリッドの互除法を使って求めよ。
+   
+2. :math:`395x+265y=d` となる整数x,yの組を一つみつけよ。
+
+
+
 Answer
 ^^^^^^^^
 
 2.4.3
 ------------
+
+1. :math:`{\mathbb Z}/7{\mathbb Z}` において、 :math:`\bar{2},\cdot\cdot\cdot\bar{6}` の乗法に関する逆元を求めよ。
+   
+2. :math:`{\mathbb Z}/284{\mathbb Z}` において、 :math:`\bar{3}` の乗法に関する逆元を求めよ。
+
 Answer
 ^^^^^^^^
 
 2.4.4
 ------------
+
+pが素数で :math:`n>0` が整数なら、 :math:`|({\mathbb Z})/p^n {\mathbb Z})^{\times}| = (p-1)p^{n-1}` であることを証明せよ。
+
 Answer
 ^^^^^^^^
 
 2.4.5
 ------------
+
+Gを群、 :math:`x\in G` を位数60の元とするとき、 :math:`x^{35}` の位数を求めよ。
+
 Answer
 ^^^^^^^^
 
 2.4.6
 ------------
+
+Gを群、 :math:`x\in G` を位数 :math:`d<\infty` の元とする。 nを位数とするとき、 :math:`x^n` の位数を求めよ。
+
 Answer
 ^^^^^^^^
 
+2.4.7
+------------
+
+Gが次の群であるとき、Gを生成する元をすべて求めよ。
+
+1. :math:`{\mathbb Z}/5{\mathbb Z}`
+2. :math:`{\mathbb Z}/7{\mathbb Z}`
+3. :math:`{\mathbb Z}/8{\mathbb Z}`
+4. :math:`{\mathbb Z}/9{\mathbb Z}`
+5. :math:`{\mathbb Z}/15{\mathbb Z}`
+
+Answer
+^^^^^^^^
+
+
+2.4.8
+------------
+群Gのすべての元gが :math:`g^2=1` となるなら、Gは可換群であることを証明せよ。
+
+
+Answer
+^^^^^^^^
+
+2.4.9
+------------
+:math:`G=GL_2({\mathbb R})` とし、 :math:`g=\left(\begin{array}{rr} 0 & -1 \\ 1 & 0 \end{array}\right), h=\left(\begin{array}{rr} 1 & 1 \\ -1 & 0 \end{array}\right)` とおく。
+
+1. g.h の位数を求めよ。
+2. ghを計算し、ghの位数が無限であることを証明せよ。
+
+
+Answer
+^^^^^^^^
+
+
+2.4.10
+------------
+Gを可換群とする。
+
+1. :math:`a,b\in G` の位数が有限なら、abの位数も有限であることを証明せよ。
+2. HをGの有限位数の元全体の集合とするとき、HがGの部分群であることを証明せよ。   
+
+
+Answer
+^^^^^^^^
+
+
+
 2.5.1
 ------------
+G,Hをそれぞれ元の個数がm,nの巡回群で、x,yをそれぞれの生成元とする。このとき、次の問いに答えよ。
+
+1. 「 :math:`x^{i_1}=x^{i_2}` であるようなすべての :math:`i_i,i_2\in {\mathbb Z}` に対し、 :math:`y^{i_1}=y^{i_2}` 」という性質が成り立つためにm,nが満たさなければならない必要十分条件を求めよ。
+
+2. \1\. の性質を満たすm,nに対しては、すべての :math:`i\in {\mathbb Z}` に対して、 :math:`\phi(x^i) = y^i` となるような準同型写像 :math:`\phi :G\to H` が存在することを証明せよ。
+
 Answer
 ^^^^^^^^
 
 2.5.2
 ------------
+
+
 Answer
 ^^^^^^^^
 

@@ -405,6 +405,9 @@ Answer
 
 1.9
 ----
+
+ガウス分布のモード（つまり分布が最大となるxの値）が :math:`\mu` で与えられることを示せ。同様に、多変量ガウス分布のモードが :math:`{\bf \mu}` であることを示せ。
+
 Answer
 ^^^^^^
 
@@ -468,26 +471,121 @@ Answer
 
 1.14
 ----
+
+:math:`w_ij` を成分とする任意の正方行列は :math:`w_{ij} = w_{ij}^{S} + w_{ij}^A` という形に書けることを示せ。ただし、 :math:`w_{ij}^S` と :math:`w_{ij}^A` はそれぞれ対称行列と反対称行列の成分であり、 :math:`w_{ij}^S=w_{ij}^S` と :math:`w_{ij}^A=-w_{ij}^A` が成り立つ。ここで、D次元における高次の多項式の２次の項
+
+.. math::
+
+   \sum^{D}_{i=1}\sum^{D}_{j=1}w_{ij}x_ix_j
+
+を考えると
+
+.. math::
+
+   \sum^{D}_{i=1}\sum^{D}_{j=1}w_{ij}x_ix_j = \sum^{D}_{i=1}\sum^{D}_{j=1}w^S_{ij}x_ix_j
+
+となり、反対称行列の寄与が消えることを示せ。これを使って、行列 :math:`w_{ij}^S` の独立パラメータの数が :math:`D(D+1)/ 2` で与えらえれることを示せ。
+
+
 Answer
 ^^^^^^
 
 1.15
 ----
+
+D次元の多項式のM次の項を書きおろすと、
+
+.. math::
+
+   \sum^D_{i_1=1}\sum^D_{i_2=1}\cdot\cdot\cdot \sum^D_{i_M=1} w_{i_1i_2\cdot\cdot\cdot i_M}x_{i_1}x_{i_2}\cdot\cdot\cdot x_{i_M}
+
+となる。係数 :math:`w_{i_1i_2\cdot\cdot\cdot M}` は :math:`D^M` 個あるが、そのうち独立なパラメータの数は :math:`x_{i_1}x_{i_2}\cdot\cdot\cdot x_{i_M}` の多くの置換対称性からそれよりずっと少なくなる。はじめに、M次の項を
+
+.. math::
+
+   \sum^D_{i_1=1}\sum^{i_1}_{i_2=1}\cdot\cdot\cdot \sum^{i_{M-1}}_{i_M=1} \tilde{w}_{i_1i_2\cdot\cdot\cdot i_M}x_{i_1}x_{i_2}\cdot\cdot\cdot x_{i_M}
+
+と書き直すことによって係数の冗長性を取り除けることを示せ。ただし、 :math:`\tilde{w}` と :math:`w` の厳密な関係は陽に表す必要はないことに注意せよ。この結果を使って、M次における **独立な** パラメータの数 :math:`n(D,M)` が
+
+.. math::
+
+   n(D,M) = \sum^D_{i=1}n(i,M-1)
+
+という再帰的な関係を満たすことを示せ。
+
+.. math::
+
+   \sum^D_{i=1}\frac{(i+M-2)!}{(i-1)!(M-1)!}= \frac{(D+M-1)!}{(D-1)!M!}
+
+上の２つの結果から、数学的帰納法により、
+
+.. math::
+
+   n(D,M) = \frac{(D+M-1)!}{(D-1)!M!}
+
+を示せ。   
+
 Answer
 ^^^^^^
 
 1.16
 ----
+
+演習1.15で、M次のD次元多項式の独立なパラメータの数を計算した。まず :math:`N(D,M)`
+
+.. math::
+
+   N(D,M) = \sum^{M}_{m=0}n(D,m)
+
+を満たすことを示せ。上記の結果と数学的帰納法より、
+
+.. math::
+
+   N(D,M) = \frac{(D+M)!}{D!M!}
+
+を示せ。最後に、 :math:`D\ll M` のとき :math:`N(D,M)` が :math:`D^M` で大きくなること示せ。
+   
+
 Answer
 ^^^^^^
 
 1.17
 ----
+
+ガンマ函数は
+
+.. math::
+
+   \Gamma(x) \equiv \int^{\infty}_{0} u^{x-1}e^{-u}du
+
+で定義される。部分積分を使って関係式 :math:`\Gamma(x+1) = x\Gamma(x)` を証明せよ。また、 :math:`\Gamma(1)=1` を示し、xが整数なら :math:`\Gamma(x+1)=1!` となることを示せ。
+
 Answer
 ^^^^^^
 
 1.18
 ----
+
+D次元の単位球の表面積 :math:`S_D` ,体積 :math:`V_D` を導く。まず直交座標から極座標への変換から導かれる
+
+.. math::
+
+   \Pi^D_{i=1}\int^{\infty}_{-\infty} e^{-x^2_i}dx_i = S_D\int^{\infty}_0 e^{-r^2}r^{D-1}dr
+
+という事実を考える。ガンマ函数の定義を使い
+
+.. math::
+
+   S_D = \frac{2\pi^{D/2}}{\Gamma(D/2)}
+
+を示せ。次に半径0から1まで積分し、D次元単位球の体積が
+
+.. math::
+
+   V_D = \frac{S_D}{D}
+
+で与えられることを示せ。最後に、 :math:`\Gamma(1) = 1` および :math:`\Gamma(3/2) = \sqrt{\pi}/2` から上記の式らが :math:`D=2` および :math:`D=3` の通常の表現に帰着されることを示せ。
+
 Answer
 ^^^^^^
 
