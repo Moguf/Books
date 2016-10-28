@@ -404,7 +404,7 @@ Answer
 
 となり、:math:`g,h\in U(n)` となる。
 
-:math:`g^{-1}\in U(n)` であるから
+:math:`g^{-1}\in GL(n)` であるから
 
 .. math::
    :nowrap:
@@ -442,32 +442,73 @@ Answer
 Answer
 ^^^^^^^^
 
+\(1\)の解答。
+
+:math:`A,C\in B` とする。 A,Cのij成分を :math:`a_{ij},c_{ij}` とすると、A,Cが下三角行列であることから、 :math:`a_{ij}=0,c_{ij}=0\hspace{10pt}(i<j)` となる。
+
+ここで :math:`AC\in B` を証明するために、ACのij成分を考えると :math:`\{AB\}_{ij} = \sum^{n}_{k=1}a_{ik}c_{kj}` となる。この行列の(i<j)の成分について考えると、
+
+1. :math:`k\le i<j` のとき,  :math:`c_{kj} = 0` とる。
+
+2. :math:`i < k \le j` のとき,  :math:`a_{ik} =0` となる。
+
+3. :math:`i<j<k` のとき,  :math:`a_{ik} =0` となる。
+
+以上より、 :math:`\{AB\}_{ij} = 0(i<j)` となり、ABは下三角行列であり, :math:`AC\in B` となる。
+   
+また、単位行列は :math:`I_n\in B` となり、Bは単位元をもつ。
+
+最後に、 :math:`AA^{-1}=I_n` を考えると :math:`a'_{ij} = A^{-1}_{ij}` とする。 :math:`AA^{-1} = \sum^{n}_{k=1}a_{ik}a'_{kj}` のようにij成分を定義する。i<jを考えると
+
+
+2. :math:`i < k \le j` のとき,  :math:`a_{ik} =0` となる。
+
+3. :math:`i<j<k` のとき,  :math:`a_{ik} =0` となる。
+
+最後に、
+
+1. :math:`k\le i<j` のとき,  :math:`a'_{kj} \neq 0` とすると
+
+:math:`I_n` が下三角行列であることに反する。よって、 :math:`a'_{kj} = 0` となる。よって :math:`A^{-1}` も下三角行列をとなる。
+
+以上より、 :math:`B\in GL_n({\mathbb R})` となり、部分群となる。
+   
+
+\(2\)の解答。
+
 
 2.3.5
 ------------
 :math:`{\mathbb R}^{\times} = {\mathbb R}\setminus \{0\}` を乗法により群とみなす。このとき、正の実数の集合 :math:`{\mathbb R}_>` は :math:`{\mathbb R}^{\times}` の部分群であることを証明せよ。
 
+      
 Answer
 ^^^^^^^^
 
+:math:`a,b\in {\mathbb R}_{>}` とすると、 :math:`ab\in {\mathbb R}_{>}` となる。 :math:`1\in {\mathbb R}_{>}` であり :math:`ab=1` となるようなbを考えると、 :math:`b=1/a \in {\mathbb R}_{>}` となる。以上より、 :math:`{\mathbb R}_{>}` が :math:`{\mathbb R}\setminus\{0\}` の部分群であることが証明された。
+      
 2.3.6
 ------------
-:math:`{\mathbb R}` を加法により群とみなす。このとき、正の実数の集合 :math:`{\mathbb R}_>` は :math:`R` の部分群であることを証明せよ。
+:math:`{\mathbb R}` を加法により群とみなす。このとき、正の実数の集合 :math:`{\mathbb R}_>` は :math:`{\mathbb R}` の部分群でないことを証明せよ。
 
-   
 Answer
 ^^^^^^^^
+:math:`{\mathbb R}` の加法により定義された群の単位元は0となる。 :math:`a \in {\mathbb R}_>` を考えると、その逆元は :math:`-a \notin {\mathbb R}_>` となり、 :math:`{\mathbb R}_>` は :math:`R` の部分群でないことが証明された。
+
 
 2.3.7
 ------------
-:math:`{\mathbb C}^{\times}` を通常の乗法により群とみなす。このとき、正の整数nを固定し、 :math:`H=\{z\in{\mathbb C}^{\times}|z^n=1\}`  集合 :math:`{\mathbb R}_>` とおく。 :math:`H` が :math:`{\mathbb C}^{\times}` の位数nの巡回部分群であることを証明せよ。
+:math:`{\mathbb C}^{\times}` を通常の乗法により群とみなす。このとき、正の整数nを固定し、 :math:`H=\{z\in{\mathbb C}^{\times}|z^n=1\}`  集合とおく。 :math:`H` が :math:`{\mathbb C}^{\times}` の位数nの巡回部分群であることを証明せよ。
    
 Answer
 ^^^^^^^^
 
+:math:`w\in H` を考えると、 :math:`w^2` は :math:`(w^2)^n = (w^n)^2 = (1)^2 =1` となり、 :math:`w^2 \in H` となる。 :math:`w^n` も同様の議論により、 :math:`w^n \in H` となる。 ここで :math:`w^{n+1} = w^nw = w` となることと上の議論より、 Hは生成元wで生成される位数nの :math:`{\mathbb C}` の巡回部分群となる。
+
+
 2.3.8
 ------------
-1. :math:`{\mathbb R}` を加法により群とみなす。このとき、正の実数の集合 :math:`{\mathbb R}_>` は :math:`R` の部分群であることを証明せよ。
+1. :math:`{\mathfrak S}_3` が巡回群ではないことを証明せよ。
 2. :math:`{\mathbb Q}` が加法に関して巡回群ではないことを証明せよ。
 3. :math:`{\mathbb R}` が加法に関して巡回群ではないことを証明せよ。
 4. :math:`{\mathbb Q}^{\times}` が乗法に関して巡回群ではないことを証明せよ。
@@ -475,6 +516,25 @@ Answer
    
 Answer
 ^^^^^^^^
+
+\(1\)
+:math:`(13),(123) \in {\mathfrak S}_3` を考える。 :math:`(13)^n = (123)` となるnは存在しないため、 :math:`{\mathfrak S}_3` は巡回群ではない。
+
+\(2\)
+:math:`2,3 \in {\mathbb Q}` を考える。  :math:`2n = 3` と自然数nが存在しないため、 :math:`{\mathbb Q}` は加法に関して巡回群ではない。
+
+\(3\)
+\(2\)と同様の議論。
+
+\(4\)
+:math:`2,3 \in {\mathbb Q}^{\times}` を考える。  :math:`2^n = 3` となる 自然数nが存在しないため、 :math:`{\mathbb Q}^{\times}` は乗法に関して巡回群ではない。
+
+\(5\)      
+:math:`(1,1),(1,2) \in {\mathbb Z}\times{\mathbb Z}` を考えると :math:`(1,1)n = (1,2)` となる自然数nが存在しないため、:math:`{\mathbb Z}\times{\mathbb Z}` が加法に関して巡回群ではない.
+      
+
+      
+
 
 2.3.9
 ------------
@@ -496,17 +556,28 @@ Answer
 Answer
 ^^^^^^^^
 
+\(1\) GCD(36,-48) = 12, LCM(36,-48) = 144,
+
+\(2\) :math:`35=24+11,24=2\cdot 11+2,11=5\cdot 2 +1` となるため、互いに疎である。
+
+
 2.4.2
 ------------
 
 1. 395と265の最大公約数dをユークリッドの互除法を使って求めよ。
-   
+
 2. :math:`395x+265y=d` となる整数x,yの組を一つみつけよ。
 
 
 
 Answer
 ^^^^^^^^
+
+\(1\) :math:`395=265+130,\hspace{10pt}265=2\cdot 130+5,\hspace{10pt}130=5\cdot 26` よって, :math:`GCD(395,265)=5`
+
+\(2\) :math:`5 = 265 - 2\cdot 130 = 265 - 2\cdot (395-265) = 3\cdot 265 - 2\cdot 395` よって :math:`(x,y)=(-2,3)`
+
+
 
 2.4.3
 ------------
@@ -518,13 +589,19 @@ Answer
 Answer
 ^^^^^^^^
 
+\(1\) :math:`\bar{2}\cdot\bar{4}=\bar{1}\hspace{10pt}\bar{3}\cdot\bar{5}=\bar{1}\hspace{10pt}\bar{6}\cdot\bar{6}=\bar{1}`
+
+\(2\) :math:`284=3\cdot 94 +2,\hspace{10pt} 3=2+1` なので、 :math:`1=3-2=3-(284-3\cdot 94)=284-3\cdot 95` よって :math:`\bar{95}\cdot\bar{3} = 1` となる。
+
 2.4.4
 ------------
 
-pが素数で :math:`n>0` が整数なら、 :math:`|({\mathbb Z})/p^n {\mathbb Z})^{\times}| = (p-1)p^{n-1}` であることを証明せよ。
+pが素数で :math:`n>0` が整数なら、 :math:`|({\mathbb Z}/p^n {\mathbb Z})^{\times}| = (p-1)p^{n-1}` であることを証明せよ。
 
 Answer
 ^^^^^^^^
+
+
 
 2.4.5
 ------------
@@ -534,6 +611,8 @@ Gを群、 :math:`x\in G` を位数60の元とするとき、 :math:`x^{35}` の
 Answer
 ^^^^^^^^
 
+:math:`LCM(60,35)=420` となり :math:`35\times 12` であるから、答えは12となる。
+
 2.4.6
 ------------
 
@@ -541,6 +620,16 @@ Gを群、 :math:`x\in G` を位数 :math:`d<\infty` の元とする。 nを位�
 
 Answer
 ^^^^^^^^
+
+`誤答`
+
+位数をmとすると、題意より、
+
+.. math::
+   
+   nm=bl
+
+となるmと素なlが存在する。よって位数は :math:`m=bl/n` が整数となるときの最小数である。
 
 2.4.7
 ------------
@@ -555,15 +644,29 @@ Gが次の群であるとき、Gを生成する元をすべて求めよ。
 
 Answer
 ^^^^^^^^
+ 
+\(1\) :math:`\bar{1},\bar{2},\bar{3},\bar{4}` 
+
+\(2\) :math:`\bar{1},\bar{2},\bar{3},\bar{4},\bar{5},\bar{6}` 
+
+\(3\) :math:`\bar{1},\bar{3},\bar{5},\bar{7}` 
+
+\(4\) :math:`\bar{1},\bar{2},\bar{4},\bar{5},\bar{7},\bar{8}` 
+
+\(5\) :math:`\bar{1},\bar{2},\bar{4},\bar{7},\bar{8},\bar{11},\bar{13},\bar{14}` 
 
 
 2.4.8
 ------------
 群Gのすべての元gが :math:`g^2=1` となるなら、Gは可換群であることを証明せよ。
 
-
 Answer
 ^^^^^^^^
+
+gの逆元を考えると :math:`g^{-1}g=1=gg \Leftrightarrow g^{-1}=g` となる。
+
+:math:`g,h\in G` とすると :math:`gh=(gh)^{-1}=h^{-1}g^{-1}=hg` となり、Gは可換群である。
+
 
 2.4.9
 ------------
@@ -575,6 +678,14 @@ Answer
 
 Answer
 ^^^^^^^^
+
+\(1\)
+
+:math:`g^2=\left(\begin{array}{rr} -1 & 0 \\ 0 & -1 \end{array}\right)` となることから、 :math:`g^4=I_2` となり、 :math:`|g|=4` となる。
+
+:math:`h^3=\left(\begin{array}{rr} -1 & 0 \\ 0 & -1 \end{array}\right)` となることから、 :math:`h^6=I_2` となり、 :math:`|h|=6` となる。
+
+
 
 
 2.4.10
@@ -588,6 +699,9 @@ Gを可換群とする。
 Answer
 ^^^^^^^^
 
+\(1\) a,bのそれぞれの位数をn,mとすると、 :math:`(ab)^{LCM(n,m)} = a^{LCM(n,m)}b^{LCM(n,m)} = 1` となることから、abの位数も有限である。
+
+\(2\) Hは有限位数の元全体の集合であることから、 :math:`h\in H` とすると :math:`h^n = 1` となる正の整数nが存在する。このときhの逆元は :math:`h^{n-1}` となり、 :math:`h^{n-1}\in H` となる。 :math:`1^1 \in H` より、 :math:`1\in H` となる。最後に、 \(1\)より、 :math:`g,h\in H` のとき、 :math:`gh\in H` となる。以上より、HはGの部分群である。
 
 
 2.5.1
@@ -601,50 +715,116 @@ G,Hをそれぞれ元の個数がm,nの巡回群で、x,yをそれぞれの生�
 Answer
 ^^^^^^^^
 
+題意より :math:`x^{lm+k} = x^k` となる整数l,kが存在する。yについて考えると、 :math:`y^{lm+k} = y^k` を満たすとすると、 lmはnの倍数で割り切れる必要がある。よって :math:`lm=in` となる整数iが存在する。逆は省略。
+
 2.5.2
 ------------
 
+Gを可換群とする。 :math:`n\in {\mathbb Z}` とするとき、 :math:`g\in G` に対して :math:`g^n` を対応させる写像 :math:`\phi_n` は準同型写像になることを証明せよ。なお、この問題では、 :math:`\phi_n(g)` を定義するときに、gが群Gの元であるということ以外の乗法を使っていないので、写像 :math:`\phi_n` がwell-definedであるかどうかは問題にならない。
 
 Answer
 ^^^^^^^^
 
 2.5.3
 ------------
+1. :math:`\phi:G\to H` が群の準同型、 :math:`g\in G` が有限位数の元なら、 :math:`\phi(g)` の位数はgの約数であることを証明せよ。
+
+2. \1\.で :math:`\phi` が同型なら、 :math:`\phi(g)` の位数はgの位数と等しいことを証明せよ。
+
+
 Answer
 ^^^^^^^^
 
 2.5.4
 ------------
+:math:`{\mathbb Z}/2{\mathbb Z}\times {\mathbb Z}/2{\mathbb Z}` と :math:`{\mathbb Z}/4{\mathbb Z}` は同型でないことを証明せよ。
+
+
 Answer
 ^^^^^^^^
 
 2.5.5
 ------------
+Gを群、 :math:`x,y\in G` とする。 :math:`n\in {\mathbb Z}` なら :math:`(xyx^{-1})^n=xy^nx^{-1}` であることを証明せよ。
+
 Answer
 ^^^^^^^^
 
 2.5.6
 ------------
+
+:math:`A=\left(\begin{array}{rr} 1& 1 \\ 1 & 0 \end{array}\right), B=\left(\begin{array}{rr} 1 & 1 \\ 1 & 0 \end{array}\right)\in SL_2({\mathbb R})\subset GL_2({\mathbb R})` とおく。
+
+1. A,Bは :math:`GL_2({\mathbb R})` では共役であることを証明せよ。
+
+2. A,Bは :math:`SL_2({\mathbb R})` では共役でないことを証明せよ。
+
+3. A,Bは :math:`SL_2({\mathbb C})` では共役であることを証明せよ。
+      
+
 Answer
 ^^^^^^^^
 
+
+2.5.7
+------------
+Gが次の群であるとき、AutGを群として決定せよ。
+
+1. :math:`{\mathbb Z}/5{\mathbb Z}`
+2. :math:`{\mathbb Z}/7{\mathbb Z}`
+3. :math:`{\mathbb Z}/8{\mathbb Z}`
+4. :math:`{\mathbb Z}/9{\mathbb Z}`
+5. :math:`{\mathbb Z}/15{\mathbb Z}`
+
+Answer
+^^^^^^^^
+
+2.5.8
+------------
+Gを群, :math:`a,b\in G` とする
+
+1. abとbaはGで共役であることを証明せよ。
+
+2. abとbaの位数は等しいことを証明せよ。
+
+Answer
+^^^^^^^^
+
+2.5.9
+------------
+:math:`G={\mathfrak S}_3` とおく。 :math:`\phi:G\ni g \mapsto i_g \in AutG` が命題2.5.22で定義された準同型とする。 :math:`\phi` が同型写像であることを証明せよ。
+
+Answer
+^^^^^^^^
+
+
 2.6.1
 ------------
+:math:`R=\{(x,y)|x\in {\mathbb R}\} \cup \{(x,2x)|x\in {\mathbb R} \} \cup \{(2x,x)|x\in {\mathbb R} \}\subset {\mathbb R}\times {\mathbb R}` とすると、Rは :math:`{\mathbb R}` 上の同値関係になるか？
+
 Answer
 ^^^^^^^^
 
 2.6.2
 ------------
+
+Gを群とする。 :math:`a,b\in G` が共役であるとき :math:`a\sim b` と定義すると、〜はG上の同値関係であることを証明せよ。
+
 Answer
 ^^^^^^^^
 
 2.6.3
 ------------
+
+位数3の群は位数5の群の部分群にはならないことを証明せよ
+
 Answer
 ^^^^^^^^
 
 2.6.4
 ------------
+Gが群、H,KはGの有限部分群で :math:`|H|,|K|` は互いに素とする。このとき、 :math:`s`
+
 Answer
 ^^^^^^^^
 
