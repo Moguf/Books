@@ -823,28 +823,35 @@ Answer
 
 2.6.4
 ------------
-Gが群、H,KはGの有限部分群で :math:`|H|,|K|` は互いに素とする。このとき、 :math:`s`
+Gが群、H,KはGの有限部分群で :math:`|H|,|K|` は互いに素とする。このとき、 :math:`H\cap K=\{1_G\}` であることを証明せよ。
 
-Answer
-^^^^^^^^
-
-2.6.5
-------------
-Answer
-^^^^^^^^
-
-2.6.6
-------------
 Answer
 ^^^^^^^^
 
 2.7.1
 ------------
+
+:math:`G={\mathfrak S}_4,H={\mathfrak S}_3` とし、Hの元を :math:`4\in \{1,2,3,4\}` を不変にするGの元とみなす。この同一視により、HはGの部分群となる。両側剰余項 :math:`H\setminus G/H` の完全代表系を一つ求めよ。
+
 Answer
 ^^^^^^^^
 
-2.7.2
-------------
+2.7.2( :math:`GL_n({\mathbb R})` のブリューア分解)
+------------------------------------------------------------
+
+:math:`GL_n({\mathbb R})` ,BをGの元で下三角行列であるもの全体よりなる部分群となる。
+
+1. :math:`g=(g_{ij})\in Gl_n({\mathbb R})` とする。 :math:`g_{ij}\neq 0` である最小のiを :math:`i_n` とするとき、 :math:`b_1,b_2\in B` が存在し、 :math:`h=b_1gb_2=(h_{ij})` が :math:`h_{in}=0(i\neq i_n),\hspace{5pt}h_{i_nj}=0(j\neq n)` という条件を満たすことを証明せよ。
+
+2. :math:`g=(g_{ij})\in Gl_n({\mathbb R})` に対し、 :math:`b_1,b_2\in B` が存在し、 :math:`b_1g_b_2` が置換行列になることを証明せよ。
+
+3. :math:`\sigma,\tau\in {\mathfrak S}_n` で :math:`P_{\sigma},P_{\tau}` を対応する置換行列とする。 :math:`b_1,b_2\in B` が存在して :math:`b_1P_{\simga}b_2=P_{\tau}` なら、 :math:`\sigma(n)=\tau(n)` であることを証明せよ。
+
+4. 
+
+5.
+
+   
 Answer
 ^^^^^^^^
 
