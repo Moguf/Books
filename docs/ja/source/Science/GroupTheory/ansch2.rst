@@ -843,124 +843,189 @@ Answer
 
 1. :math:`g=(g_{ij})\in Gl_n({\mathbb R})` とする。 :math:`g_{ij}\neq 0` である最小のiを :math:`i_n` とするとき、 :math:`b_1,b_2\in B` が存在し、 :math:`h=b_1gb_2=(h_{ij})` が :math:`h_{in}=0(i\neq i_n),\hspace{5pt}h_{i_nj}=0(j\neq n)` という条件を満たすことを証明せよ。
 
-2. :math:`g=(g_{ij})\in Gl_n({\mathbb R})` に対し、 :math:`b_1,b_2\in B` が存在し、 :math:`b_1g_b_2` が置換行列になることを証明せよ。
+2. :math:`g=(g_{ij})\in Gl_n({\mathbb R})` に対し、 :math:`b_1,b_2\in B` が存在し、 :math:`b_1gb_2` が置換行列になることを証明せよ。
 
-3. :math:`\sigma,\tau\in {\mathfrak S}_n` で :math:`P_{\sigma},P_{\tau}` を対応する置換行列とする。 :math:`b_1,b_2\in B` が存在して :math:`b_1P_{\simga}b_2=P_{\tau}` なら、 :math:`\sigma(n)=\tau(n)` であることを証明せよ。
+3. :math:`\sigma,\tau\in {\mathfrak S}_n` で :math:`P_{\sigma},P_{\tau}` を対応する置換行列とする。 :math:`b_1,b_2\in B` が存在して :math:`b_1P_{\sigma}b_2=P_{\tau}` なら、 :math:`\sigma(n)=\tau(n)` であることを証明せよ。
 
-4. 
+4. :math:`b_1,b_2\in B` が3.の条件を満たすなら、 :math:`b_1 = (b_{1,ij})` とするとき、 :math:`b_{1,i\sigma(n)}=0(i\neq \sigma(n))` であることを証明せよ。また、 :math:`\nu` を置換
 
-5.
+.. math::
+   :nowrap:
+
+   \begin{eqnarray*}
+      \left(
+      \begin{array}{ccccc}
+      \sigma(n) & \sigma(n)+1 & \sigma(n)+2 & \cdot\cdot\cdot & n \\
+      n & \sigma(n) & \sigma(n)+1 & \cdot\cdot\cdot & n-1
+      \end{array}
+      \right)
+   \end{eqnarray*}
+
+とするとき、 :math:`P_{\nu}b_1P_{\nu}^{-1}\in B` であることを証明せよ。
+   
+5. :math:`b_1,b_2\in B` が3.の条件を満たすなら、 :math:`\sigma = \tau` であることを証明せよ。
 
    
 Answer
 ^^^^^^^^
 
-2.7.3
-------------
-Answer
-^^^^^^^^
-
-2.7.4
-------------
-Answer
-^^^^^^^^
-
-2.7.5
-------------
-Answer
-^^^^^^^^
-
-2.7.6
-------------
-Answer
-^^^^^^^^
-
 2.8.1
 ------------
+
+次の群Gの部分群Hが正規部分群であるかどうか判定せよ。
+
+1. :math:`H={\mathfrak S}_3 \subset G = {\mathfrak S}_4.`
+
+2. :math:`H=SO(2)\subset G = GL_2({\mathbb R}).`
+
+3. :math:`H=GL_2({\mathbb R}) \subset G=GL_2({\mathbb C}).`
+
+4. :math:`H=\{1,(12)(34),(13)(24),(14)(23)\}\subset G = {\mathfrak S}_4`
+
+5. Gは :math:`GL_2({\mathbb R})` の元で下三角行列であるもの全体よりなる群、HはGの元で対角成分が等しい元よりなる部分群.
+
+
+
 Answer
 ^^^^^^^^
 
 2.8.2
 ------------
+Hを群Gの指数2の部分群とする。このとき、HはGの正規部分群であることを証明せよ。
+
+
+
 Answer
 ^^^^^^^^
 
 2.8.3
 ------------
-Answer
-^^^^^^^^
+:math:`N_1,N_2` が群Gの正規部分群なら、 :math:`N_1N_2` もGの正規部分群であることを証明せよ。
 
-2.8.4
-------------
-Answer
-^^^^^^^^
 
-2.8.5
-------------
-Answer
-^^^^^^^^
-
-2.8.6
-------------
 Answer
 ^^^^^^^^
 
 2.9.1
 ------------
+次の群を位数が素数べきの巡回群の直積で表せ。
+
+1. :math:`{\mathbb Z}/15{\mathbb Z}`
+2. :math:`{\mathbb Z}/28{\mathbb Z}`
+3. :math:`{\mathbb Z}/60{\mathbb Z}`
+4. :math:`{\mathbb Z}/1400{\mathbb Z}`
+
+
 Answer
 ^^^^^^^^
 
 2.9.2
 ------------
+
+:math:`G_1,G_2` は有限群、 :math:`n_1=|G_1|,\ n_2=|G_2|` は互いに素とする。 :math:`\phi :G_1\times G_2 \to G_1\times G_2` が準同型なら、準同型 :math:`\phi_1: G_1 \to G_2,\ \phi_2:G_2\to G_1` があり、任意の :math:`(g_1,g_2)\in G_1\times G_2` に対して :math:`\phi (g_1,g_2) = \phi_1(g_1)\phi_2(g_2)` であることを証明せよ。
+
 Answer
 ^^^^^^^^
 
 2.9.3
 ------------
+
+1. 8で割った余りが5で、15で割った余りが2である整数を一つみつけよ。
+2. 35で割った余り4で、24で割った余りが5である整数を一つみつけよ。
+
 Answer
 ^^^^^^^^
 
 2.9.4
 ------------
+
+:math:`{\mathfrak S}_3` の部分群をすべて求めよ。そのなかで正規部分群はどれか？
+
+
 Answer
 ^^^^^^^^
 
 2.9.5
 ------------
-Answer
-^^^^^^^^
 
-2.9.6
-------------
+四元数群の部分群をすべて求めよ。そのなかで正規部分群はどれか？
+
 Answer
 ^^^^^^^^
 
 2.10.1
 ------------
+
+:math:`G = {\mathbb C}^{\times}` を通常の乗法による群、 :math:`H_1 = {\mathbb C}^1 := \{z\in {\mathbb C} \mid |z|=1\},\ H_2=\{ x\in {\mathbb R} \mid x> 0 \}` とおく。 :math:`G\setminus H_1,\ G\setminus H_2` を準同型定理を使い記述せよ。
+
 Answer
 ^^^^^^^^
 
 2.10.2
 ------------
+
+:math:`{\mathbb R}` を通常の加法による群とする。 :math:`a\neq 0` を任意の実数とするとき、 :math:`{\mathbb R} / {\mathbb Z}` と :math:`{\mathbb R} / a{\mathbb Z}` が同型であることを準同型定理を使い証明せよ。
+
 Answer
 ^^^^^^^^
 
 2.10.3
 ------------
+
+:math:`G,H` を演習問題2.8.1(5)で定義したものとする。 :math:`G/H` が :math:`{\mathbb R}^{\times}` と同型であることを準同型定理を使い証明せよ。
+
+
 Answer
 ^^^^^^^^
 
 2.10.4
 ------------
+Gを可換群、 :math:`n>0` を整数とする。Gの演算は＋であるとし、 :math:`nG=\{nx\mid x\in G\}` とおく。HがGの指数nの部分群なら、HはnGを含むことを証明せよ。
+
 Answer
 ^^^^^^^^
 
 2.10.5
 ------------
+:math:`G={\mathbb Z}^2` とする。
+
+1. Gの指数2の部分群の数を求めよ。
+2. Gの指数13の部分群の数を求めよ。         
+
 Answer
 ^^^^^^^^
 
 2.10.6
 ------------
+
+:math:`G={\mathbb Z}/45{\mathbb Z}\times{\mathbb Z}/24{\mathbb Z}\times{\mathbb Z}/14{\mathbb Z}` の指数2の部分群の数を求めよ。
+
+
 Answer
 ^^^^^^^^
+
+2.10.7
+------------
+
+1. :math:`{\mathbb Z}/12{\mathbb Z}` の部分群をすべて求めよ。
+2. :math:`{\mathbb Z}/18{\mathbb Z}` の部分群をすべて求めよ。   
+
+
+Answer
+^^^^^^^^
+
+2.10.8
+------------
+
+Gを位数が6の群とする.
+
+1. Gに位数3の元が存在することを証明せよ。
+2. :math:`x\in G` を位数3の元、 :math:`H=\langle x\rangle` とおく。 G/Hを考えることによりGに位数2の元が存在することを証明せよ。
+3. Gが可換なら、Gは :math:`{\mathbb Z}/6{\mathbb Z}` に同型であることを証明せよ。
+4. Gが可換でないなら、Gには位数2の元がちょうど3個あり、すべての共役であることを証明せよ。
+5. 4\. の状況で :math:`x_1,x_2,x_3` を位数2の元とするとき、 :math:`g\in G` に対し :math:`gx_ig^{-1} = x_{\rho (g)(i)}(i=1,2,3)` とおくと、 :math:`\rho (g) \in {\mathfrak S}_3` であり、この :math:`\rho` によりGは :math:`{\mathfrak S}_3` と同型であることを証明せよ。
+
+
+Answer
+^^^^^^^^
+
