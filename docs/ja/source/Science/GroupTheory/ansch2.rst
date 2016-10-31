@@ -725,6 +725,9 @@ Gを可換群とする。 :math:`n\in {\mathbb Z}` とするとき、 :math:`g\i
 Answer
 ^^^^^^^^
 
+:math:`g,h\in G` とすると、 :math:`\phi_n(gh)=(gh)^n=g^nh^n=\phi_n(g)\phi_n(h)` となり :math:`\phi_n` は準同型となる。
+
+
 2.5.3
 ------------
 1. :math:`\phi:G\to H` が群の準同型、 :math:`g\in G` が有限位数の元なら、 :math:`\phi(g)` の位数はgの約数であることを証明せよ。
