@@ -738,7 +738,7 @@ Answer
 Answer
 ^^^^^^^^
 
-:math:`g\in G` の位数をnとすると、 :math:`g^n = 1_G` となる。ここでの1はGの単位元とする。 :math:`\phi:G\to H` が群の準同型写像であるから :math:`\phi(g^n)=\phi(g)^n=\phi(1_G) = 1_H` となる。 :math:`\phi(g)^m = 1_H` とすると、n<mとすると :math:`\phi(g^n)=\phi(g)^n = 1_H` に反するので、 :math:`n\leq m` を考える。
+:math:`g\in G` の位数をnとすると、 :math:`g^n = 1_G` となる。ここでの1はGの単位元とする。 :math:`\phi:G\to H` が群の準同型写像であるから :math:`\phi(g^n)=\phi(g)^n=\phi(1_G) = 1_H` となる。 :math:`\phi(g)^m = 1_H` とすると、n<mとすると :math:`\phi(g^n)=\phi(g)^n = 1_H` に反するので、 :math:`m\leq n` を考える。 :math:`mk+l=n` とすると、 :math:`\phi(g^n)=\phi(g^{mk+l})=\phi(g)^{mk+l}=\phi(g)^{mk}\phi(g)^{l}=1_H` より、l=0となる。よって、 mはnの約数となる。
 
 
 2.5.4
