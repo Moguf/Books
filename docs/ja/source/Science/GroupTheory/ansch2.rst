@@ -747,16 +747,52 @@ Answer
 ------------
 :math:`{\mathbb Z}/2{\mathbb Z}\times {\mathbb Z}/2{\mathbb Z}` と :math:`{\mathbb Z}/4{\mathbb Z}` は同型でないことを証明せよ。
 
-
 Answer
 ^^^^^^^^
 
+同型でないことを証明するために和に関する演算表を作成する。
+
+.. math::
+   :nowrap:
+
+   \begin{eqnarray*}
+      \begin{array}{|c|c|c|c|c|}
+      \hline
+      & (0,0) & (1,0) & (0,1) & (1,1)  \\ \hline
+      (0,0) & (0,0) & (1,0) & (0,1) & (1,1)  \\ \hline
+      (1,0) & (1,0) & (0,0) & (1,1) & (0,1)  \\ \hline
+      (0,1) & (0,1) & (1,1) & (0,0) & (1,0)  \\ \hline
+      (1,1) & (1,1) & (0,1) & (1,0) & (0,0)  \\ \hline
+      \end{array}
+   \end{eqnarray*}
+
+.. math::
+   :nowrap:
+
+   \begin{eqnarray*}
+      \begin{array}{|c|c|c|c|c|}
+      \hline
+      & \bar{0} & \bar{1} & \bar{2} & \bar{3} \\ \hline
+      \bar{0} & \bar{0} & \bar{1} & \bar{2} & \bar{3} \\ \hline
+      \bar{1} & \bar{1} & \bar{2} & \bar{3} & \bar{0} \\ \hline
+      \bar{2} & \bar{2} & \bar{3} & \bar{0} & \bar{1} \\ \hline
+      \bar{3} & \bar{3} & \bar{0} & \bar{1} & \bar{2} \\ \hline       
+      \end{array}
+   \end{eqnarray*}
+
+ここで、 :math:`\phi((0,0)) = \bar{0},\ \phi((1,0)) = \bar{1},\ \phi((0,1)) = \bar{2},\ \phi((1,1)) = \bar{3}` とすると
+
+表より、 :math:`\phi((1,0)+(1,1)) = \phi((0,1)) = \bar{2} \neq \phi((1,0))+\phi((1,1)) = \bar{1}+\bar{3} =\bar{0}` となり、 :math:`\phi` が準同型写像とならないことがわかった。どのように対応させても、同様の矛盾が生じるため、 :math:`{\mathbb Z}/2{\mathbb Z}\times {\mathbb Z}/2{\mathbb Z}` と :math:`{\mathbb Z}/4{\mathbb Z}` は同型でない
+
+      
 2.5.5
 ------------
 Gを群、 :math:`x,y\in G` とする。 :math:`n\in {\mathbb Z}` なら :math:`(xyx^{-1})^n=xy^nx^{-1}` であることを証明せよ。
 
 Answer
 ^^^^^^^^
+
+
 
 2.5.6
 ------------
