@@ -792,7 +792,18 @@ Gを群、 :math:`x,y\in G` とする。 :math:`n\in {\mathbb Z}` なら :math:`
 Answer
 ^^^^^^^^
 
+帰納的に考えると、 :math:`n=1` のとき成り立つ。 :math:`n=k` が成り立つとすると、 :math:`n=k+1` は以下のようになる。
 
+.. math::
+   :nowrap:
+
+   \begin{eqnarray*}
+      (xyx^{-1})^{k+1} &=& (xyx^{-1})^k(xyx^{-1})  \\
+      &=& xy^kx^{-1} xyx^{-1} \\
+      &=& xy^{k+1}x^{-1}
+   \end{eqnarray*}   
+
+よって、題意は示された。
 
 2.5.6
 ------------
