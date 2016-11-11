@@ -28,4 +28,4 @@ Business & Money
    UtilizingAccountingIntoStrategy/index.rst
    TheMintoPyramidPrinciple/index.rst
    AnEasyGuideToAccounting/index.rst
-
+   StockAnalysis/index.rst
