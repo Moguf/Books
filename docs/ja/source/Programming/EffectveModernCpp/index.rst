@@ -55,7 +55,7 @@ Rvalue ReferencesとMove SemanticsとPerfect Forwarding
 Lambda例外
 ----------
 
-*
+* 
 *
 *
 *
