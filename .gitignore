@@ -106,3 +106,5 @@ doc/*
 !.gitkeep
 
 .pypirc
+
+*.out
