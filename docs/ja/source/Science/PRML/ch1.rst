@@ -183,8 +183,13 @@ Answer
    \setcounter{equation}{1}            
    \begin{eqnarray}
    \frac{dp_y(y)}{dy} &=& \frac{d}{dy}p_x(g(y)) | g'(y)| \nonumber \\
-   &=& g'(y)\frac{dp_x(g(y))}{dg(y)}+p_x(y)|g''(y)|
+   &=& g'(y)\frac{dp_x(g(y))}{dg(y)}+p_x(y)sgn(g'(y))g''(y) 
    \end{eqnarray}   
+
+.. note::
+
+   :math:`\frac{dg'(y)}{dy}=sgn(g'(y))g''(y)` の指摘は、`uc-hiro <https://github.com/Hirotoshi-Uchino>`_ 氏による
+      
    
 このとき、題意より
 
@@ -199,7 +204,7 @@ Answer
       
    \setcounter{equation}{2}                  
    \begin{eqnarray}
-   g'(\hat{y})\frac{dp_x(g(y))}{dg(y)}|_{\hat{y}}+p_x(\hat{y})|g''(\hat{y})| &=& 0 
+   g'(\hat{y})\frac{dp_x(g(y))}{dg(y)}|_{\hat{y}}+p_x(\hat{y})sgn(g'(\hat{y}))g''(\hat{y}) &=& 0 
    \end{eqnarray}
 
 ここで、 :math:`\hat{x} = g(\hat{y})` と仮定すると :math:`(3)` は
@@ -209,7 +214,7 @@ Answer
       
    \setcounter{equation}{3}                  
    \begin{eqnarray}
-   g'(\hat{y})\frac{dp_x(x)}{dx}|_{\hat{x}}+p_x(\hat{y})|g''(\hat{y})| &=& 0 
+   g'(\hat{y})\frac{dp_x(x)}{dx}|_{\hat{x}}+p_x(\hat{y})sgn(g'(\hat{y}))g''(\hat{y}) &=& 0 
    \end{eqnarray}
 
 
@@ -221,7 +226,7 @@ Answer
 
 .. math::
 
-   p_x(\hat{y})|g''(\hat{y})| = 0
+   p_x(\hat{y})sgn(g'(\hat{y}))g''(\hat{y}) = 0
 
 ここで、 :math:`g(y)` が非線形変換であるから、 :math:`g''(y) \neq 0` よって
 
@@ -456,11 +461,42 @@ Answer
 
 1.11
 ----
+
+対数尤度関数
+
+.. math::
+
+   \ln{ p({\bf x}|\mu ,\sigma^2)} = -\frac{1}{2\sigma^2} \sum^{N}_{n=1}(x_n - \mu)^2 - \frac{N}{2} \ln{\sigma^2} \
+   -\frac{N}{2} \ln{(2\pi)}
+   
+の :math:`\mu` と :math:`\sigma^2` に関する微分を0とおいて以下を確かめよ.
+
+.. math::
+   :nowrap:
+
+   \begin{eqnarray*}
+   \mu_{ML} &=& \frac{1}{N}\sum^{N}_{x=1}x_n \\
+   \sigma_{ML}^2 &=& \frac{1}{N}\sum^{N}_{x=1}(x_n - \mu_{ML})^2
+   \end{eqnarray*}
+
+
 Answer
 ^^^^^^
 
 1.12
 ----
+
+.. math::
+   :nowrap:
+
+   \begin{eqnarray*}
+   \mathbb{E}[x] &=& \int^{\infty}_{-\infty} \mathcal{N}(x | \mu , \sigma^2) x \mathrm{d}x = \mu \\
+   \mathbb{E}[x^2] &=& \int^{\infty}_{-\infty} \mathcal{N}(x | \mu , \sigma^2) x^2 \mathrm{d}x  = \mu^2 + \sigma^2
+   \end{eqnarray*}
+      
+
+上記を使って、 :math:`x_n` 
+   
 Answer
 ^^^^^^
 

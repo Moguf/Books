@@ -49,5 +49,5 @@ Graphics View
 
    widgets_tuto.rst
    model_view_tuto.rst
-
+   grahpics_view.rst
 
