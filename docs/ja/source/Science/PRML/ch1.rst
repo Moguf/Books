@@ -408,16 +408,40 @@ Answer
 ^^^^^^
 
 
-1.9
-----
+.. math::
+   :nowrap:
+
+   \begin{eqnarray*}
+   {\bf E}[x] &=& \int^{\infty}_{-\infty} N(x|\mu,\sigma^2) x dx \\
+   &=& \int^{\infty}_{-\infty} \frac{1}{(2\pi\sigma^2)^{1/2}}exp\left\{ -\frac{1}{2\sigma^2}(x-\mu)^2\right\}x dx \\
+   &=& \frac{\sigma^2}{(2\pi\sigma^2)^{1/2}} \int^{\infty}_{-\infty} \left\{ exp\left\{ -\frac{1}{2\sigma^2}(x-\mu)^2\right\} \right\}' dx +    \frac{\mu}{(2\pi\sigma^2)^{1/2}} \int^{\infty}_{-\infty} exp\left\{ -\frac{1}{2\sigma^2}(x-\mu)^2 \right\} dx \\
+   &=& 0 + \frac{\mu}{(2\pi\sigma^2)^{1/2}} (2\pi\sigma^2)^{1/2} = \mu
+   \end{eqnarray*}
+
+
+部分積分を実行することで解くことができる。
+
+.. math::
+   :nowrap:
+
+   \begin{eqnarray*}
+   {\bf E}[x] &=& \int^{\infty}_{-\infty} N(x|\mu,\sigma^2) x^2 dx \\
+   &=& \int^{\infty}_{-\infty} x \cdot x\frac{x}{(2\pi\sigma^2)^{1/2}}exp\left\{ -\frac{1}{2\sigma^2}(x-\mu)^2\right\} dx \\
+   &=& \int^{\infty}_{-\infty} (u-\mu)^2 x\frac{1}{(2\pi\sigma^2)^{1/2}}exp\left\{ -\frac{1}{2\sigma^2}(x-\mu)^2\right\} dx \\
+   &=& 0 + \frac{\mu}{(2\pi\sigma^2)^{1/2}} (2\pi\sigma^2)^{1/2} = \mu
+   \end{eqnarray*}
+
+
+1.9(基本)
+---------
 
 ガウス分布のモード（つまり分布が最大となるxの値）が :math:`\mu` で与えられることを示せ。同様に、多変量ガウス分布のモードが :math:`{\bf \mu}` であることを示せ。
 
 Answer
 ^^^^^^
 
-1.10
-----
+1.10(基本)
+----------
 
 :math:`x,z` が統計的に独立であるとすると、以下が成り立つことを示せ。
 
@@ -457,10 +481,10 @@ Answer
    &=& var[x] + var[z]
    \end{eqnarray*}
    
-   
+      
 
-1.11
-----
+1.11(基本)
+----------
 
 対数尤度関数
 
@@ -483,8 +507,8 @@ Answer
 Answer
 ^^^^^^
 
-1.12
-----
+1.12(標準)
+--------
 
 .. math::
    :nowrap:
@@ -495,7 +519,26 @@ Answer
    \end{eqnarray*}
       
 
-上記を使って、 :math:`x_n` 
+上記を使って、 以下を示せ。
+
+.. math::
+   :nowrap:
+
+   \begin{eqnarray*}
+   \mathbb{E}[x_nx_m] &=& \mu^2 + I_{nm}\sigma^2
+   \end{eqnarray*}
+
+
+:math:`x_n` と :math:`x_m` は平均 :math:`\mu` 、分散 :math:`\sigma^2` のガウス分布から生成されたデータ点を表し、 :math:`I_{nm}` は :math:`n=m` のとき :math:`I_{nm}=1` でそれ以外は :math:`I_{nm}=0` であるとする。これから以下を証明せよ。
+
+.. math::
+   :nowrap:
+
+   \begin{eqnarray*}
+   \mathbb{E}[\mu_{ML}] &=& \mu \\
+   \mathbb{E}[\sigma^2_{ML}] &=& \left( \frac{N-1}{N} \right) \sigma^2
+   \end{eqnarray*}
+   
    
 Answer
 ^^^^^^
